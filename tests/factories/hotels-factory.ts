@@ -6,8 +6,8 @@ export async function createHotel(){
         data: {
             name: faker.company.companyName(),
             image: faker.image.imageUrl(),
-            createdAt: faker.datatype.datetime(),
-            updatedAt: faker.datatype.datetime(),
+            updatedAt: new Date(),
+            createdAt: new Date(),
         }
     })
 }
